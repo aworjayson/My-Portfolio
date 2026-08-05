@@ -102,10 +102,28 @@ export function Experience() {
             initial={{ opacity: 0, y: 15 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15, ease: [0.23, 1, 0.32, 1] }}
-            className="text-muted-foreground mb-16 max-w-lg"
+            className="text-muted-foreground mb-8 max-w-lg"
           >
             Five roles, each one a real environment with real systems on the line.
           </motion.p>
+
+          {/* Decorative workspace image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
+            className="mb-12 relative overflow-hidden rounded-sm"
+          >
+            <img
+              src="/manus-storage/experience-tech_7e1bd648.png"
+              alt="IT workspace"
+              className="w-full h-40 md:h-56 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
+            <div className="absolute bottom-4 left-6">
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-amber-400/80">where the work happens</span>
+            </div>
+          </motion.div>
 
           {/* Experience List */}
           <div className="space-y-0">

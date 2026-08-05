@@ -82,6 +82,24 @@ export function Skills() {
             What I Work With<span className="text-accent">.</span>
           </motion.h2>
 
+          {/* Decorative tech image strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
+            className="mb-12 relative overflow-hidden rounded-sm"
+          >
+            <img
+              src="/manus-storage/skills-tech_0bb983f8.png"
+              alt="Network infrastructure detail"
+              className="w-full h-48 md:h-64 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/30 to-transparent" />
+            <div className="absolute bottom-4 left-6">
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-amber-400/80">tools of the trade</span>
+            </div>
+          </motion.div>
+
           {/* Skills Grid — editorial dossier table */}
           <div className="border-t border-border/50">
             <div className="grid grid-cols-1 lg:grid-cols-3">

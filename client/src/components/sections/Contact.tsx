@@ -74,10 +74,28 @@ export function Contact() {
             initial={{ opacity: 0, y: 15 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15, ease: [0.23, 1, 0.32, 1] }}
-            className="text-muted-foreground mb-16 max-w-lg font-medium text-base"
+            className="text-muted-foreground mb-6 max-w-lg font-medium text-base"
           >
             Open to IT support roles, network/systems work, and freelance WordPress builds.
           </motion.p>
+
+          {/* Decorative network globe image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
+            className="mb-12 relative overflow-hidden rounded-sm"
+          >
+            <img
+              src="/manus-storage/contact-tech_47f39765.png"
+              alt="Global network connections from Kenya"
+              className="w-full h-40 md:h-52 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
+            <div className="absolute bottom-4 left-6">
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-amber-400/80">connecting from Nairobi to the world</span>
+            </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             {/* Left: Contact Form */}
