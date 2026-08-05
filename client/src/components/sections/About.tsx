@@ -51,7 +51,7 @@ export function About() {
               </h2>
               <div className="w-full aspect-[4/3] overflow-hidden rounded-sm relative mt-8">
                 <img
-                  src="/manus-storage/about-serverroom_35a8843b.png"
+                  src="/manus-storage/about-real_5beb7af6.jpg"
                   alt="Network Infrastructure"
                   className="w-full h-full object-cover"
                 />
