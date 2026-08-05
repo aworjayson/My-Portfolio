@@ -115,7 +115,7 @@ export function Experience() {
             className="mb-12 relative overflow-hidden rounded-sm"
           >
             <img
-              src="/manus-storage/experience-machines_1855fb82.jpg"
+              src="/manus-storage/experience-diverse_55492f70.jpg"
               alt="IT workspace"
               className="w-full h-40 md:h-56 object-cover"
             />
