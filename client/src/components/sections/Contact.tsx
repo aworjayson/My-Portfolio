@@ -93,7 +93,7 @@ export function Contact() {
             className="mb-12 relative overflow-hidden rounded-sm"
           >
             <img
-              src="/manus-storage/contact-city_336b847c.png"
+              src="/manus-storage/contact-hardware_fc5c0ac1.png"
               alt="Global network connections from Kenya"
               className="w-full h-40 md:h-52 object-cover"
             />
