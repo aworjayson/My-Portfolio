@@ -111,6 +111,22 @@ export function Hero() {
             >
               View Experience
             </a>
+            <a
+              href="#download-cv"
+              onClick={(e) => {
+                e.preventDefault();
+                // Trigger a simple toast-style feedback
+                const btn = e.currentTarget;
+                btn.textContent = "Coming Soon";
+                setTimeout(() => { btn.innerHTML = "Download CV <svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\"><path d=\"M7 3v8M4 8l3 3 3-3\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>"; }, 1500);
+              }}
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground/70 font-medium text-sm rounded-sm hover:bg-foreground/5 hover:text-foreground transition-all duration-200 active:scale-[0.97]"
+            >
+              Download CV
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 3v8M4 8l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+            </a>
           </motion.div>
         </div>
 

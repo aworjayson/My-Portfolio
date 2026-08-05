@@ -10,26 +10,32 @@ import { motion } from "framer-motion";
 import { useInView } from "@/hooks/useInView";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
+type FormStatus = "idle" | "error" | "sent";
+
 export function Contact() {
   const [ref, inView] = useInView({ threshold: 0.15 });
-  const [formNote, setFormNote] = useState("");
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorMsg("");
+
     const form = e.currentTarget;
     const name = (form.elements.namedItem('name') as HTMLInputElement).value.trim();
     const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim();
     const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim();
 
     if (!name || !email || !message) {
-      setFormNote("Please fill in every field before sending.");
+      setStatus("error");
+      setErrorMsg("Please fill in all fields — name, email, and message are required.");
       return;
     }
 
     const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:aworijayson@gmail.com?subject=${subject}&body=${body}`;
-    setFormNote("Opening your email client…");
+    setStatus("sent");
   };
 
   return (
@@ -150,16 +156,35 @@ export function Contact() {
                     placeholder="What do you need help with?"
                   />
                 </div>
+                {/* Success message */}
+                {status === "sent" && (
+                  <div className="flex items-center gap-3 px-4 py-3 bg-[#E7EFE9] border border-[#CFE3D6] rounded-sm">
+                    <span className="relative flex h-2 w-2 flex-shrink-0">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-[#3B7A57] opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#3B7A57]" />
+                    </span>
+                    <div>
+                      <p className="text-sm font-medium text-[#3B7A57]">Message ready to send</p>
+                      <p className="text-xs text-[#3B7A57]/80 mt-0.5">Your email client has been opened — just hit send!</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Error message */}
+                {status === "error" && errorMsg && (
+                  <div className="flex items-center gap-3 px-4 py-3 bg-red-50 border border-red-200 rounded-sm">
+                    <span className="w-2 h-2 rounded-full bg-red-500 flex-shrink-0" />
+                    <p className="text-sm font-medium text-red-700">{errorMsg}</p>
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-medium text-sm rounded-sm hover:bg-foreground/90 transition-all duration-200 active:scale-[0.97]"
                 >
-                  Send Message
+                  {status === "sent" ? "Message Sent" : "Send Message"}
                   <Send className="w-3.5 h-3.5" />
                 </button>
-                {formNote && (
-                  <p className="text-xs text-muted-foreground text-center">{formNote}</p>
-                )}
                 <p className="text-[11px] text-muted-foreground/60 text-center">
                   Opens your email client with this message pre-filled.
                 </p>
