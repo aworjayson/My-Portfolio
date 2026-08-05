@@ -42,7 +42,7 @@ export function Navigation() {
           className="flex items-center gap-2 group flex-shrink-0"
         >
           <img
-            src="/favicon.svg"
+            src="/manus-storage/jayson-logo_06124b83.png"
             alt="JA"
             className="w-8 h-8 opacity-90 group-hover:opacity-100 transition-opacity"
           />

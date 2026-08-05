@@ -22,7 +22,7 @@ export function Footer() {
           className="flex items-center gap-3"
         >
           <img
-            src="/favicon.svg"
+            src="/manus-storage/jayson-logo_06124b83.png"
             alt="JA"
             className="w-5 h-5 opacity-50"
           />
