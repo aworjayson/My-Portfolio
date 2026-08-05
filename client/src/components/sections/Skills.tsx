@@ -90,7 +90,7 @@ export function Skills() {
             className="mb-12 relative overflow-hidden rounded-sm"
           >
             <img
-              src="/manus-storage/skills-diverse_870d0d88.jpg"
+              src="/manus-storage/skills-cybersec_a8bf4eee.jpg"
               alt="Network infrastructure detail"
               className="w-full h-48 md:h-64 object-cover"
             />
