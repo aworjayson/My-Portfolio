@@ -67,8 +67,8 @@
   --popover-foreground: oklch(0.141 0.005 65);
   --secondary: oklch(0.95 0.005 80);
   --secondary-foreground: oklch(0.35 0.01 65);
-  --muted: oklch(0.75 0.01 286);
-  --muted-foreground: oklch(0.55 0.015 286);
+  --muted: oklch(0.70 0.01 286);
+  --muted-foreground: oklch(0.40 0.015 286);
   --accent: oklch(0.78 0.15 75);
   --accent-foreground: oklch(0.141 0.005 65);
   --destructive: oklch(0.577 0.245 27.325);
@@ -91,6 +91,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-sans);
+    font-weight: 500;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

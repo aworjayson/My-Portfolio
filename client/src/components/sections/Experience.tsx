@@ -169,7 +169,7 @@ function ExperienceItem({
             {experience.highlights.map((h, j) => (
               <li
                 key={j}
-                className="text-sm text-foreground/65 leading-relaxed flex items-start gap-3"
+                className="text-sm text-foreground/80 leading-relaxed flex items-start gap-3"
               >
                 <span className="w-[6px] h-[6px] rounded-full bg-accent/40 mt-[7px] flex-shrink-0" />
                 {h}

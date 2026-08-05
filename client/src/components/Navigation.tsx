@@ -57,7 +57,7 @@ export function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="relative text-sm font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 group"
+              className="relative text-sm font-medium text-foreground/85 hover:text-foreground transition-colors duration-200 group"
             >
               {link.label}
               <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-accent group-hover:w-full transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)]" />
@@ -128,7 +128,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-sm font-medium text-foreground/70 hover:text-foreground py-1"
+                  className="text-sm font-medium text-foreground/85 hover:text-foreground py-1"
                 >
                   {link.label}
                 </a>

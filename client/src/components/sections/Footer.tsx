@@ -30,7 +30,7 @@ export function Footer() {
             <p className="font-mono text-[11px] text-muted-foreground tracking-wide">
               Jayson Awori &copy; {new Date().getFullYear()}
             </p>
-            <p className="font-mono text-[10px] text-muted-foreground/50 mt-0.5">
+            <p className="font-mono text-[10px] text-muted-foreground/70 mt-0.5">
               Nairobi, Kenya
             </p>
           </div>

@@ -70,20 +70,20 @@ export function About() {
               className="lg:col-span-6 lg:col-start-7"
             >
               <div className="space-y-5">
-                <p className="text-base md:text-lg leading-[1.7] text-foreground/75">
+                <p className="text-base md:text-lg leading-[1.7] text-foreground/85">
                   I'm an IT support professional who's spent the last few years inside
                   real organisations — a law firm, a public water utility, a government
                   ministry — managing networks, fixing hardware, setting up software,
                   and keeping endpoints safe.
                 </p>
-                <p className="text-base md:text-lg leading-[1.7] text-foreground/75">
+                <p className="text-base md:text-lg leading-[1.7] text-foreground/85">
                   I follow the rules for protecting data because I've seen what happens
                   when systems don't. Whether it's a LAN that's gone down, a fleet of
                   laptops that needs imaging, or a WordPress site that needs building,
                   I bring the same habit: diagnose properly, fix it cleanly, write it
                   down so the next person doesn't have to guess.
                 </p>
-                <p className="text-base md:text-lg leading-[1.7] text-foreground/75">
+                <p className="text-base md:text-lg leading-[1.7] text-foreground/85">
                   I believe in building infrastructure that just works — reliable,
                   secure, and invisible when it needs to be.
                 </p>

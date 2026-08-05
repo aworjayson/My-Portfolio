@@ -74,7 +74,7 @@ export function Contact() {
             initial={{ opacity: 0, y: 15 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15, ease: [0.23, 1, 0.32, 1] }}
-            className="text-muted-foreground mb-16 max-w-lg"
+            className="text-muted-foreground mb-16 max-w-lg font-medium text-base"
           >
             Open to IT support roles, network/systems work, and freelance WordPress builds.
           </motion.p>

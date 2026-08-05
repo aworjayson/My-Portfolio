@@ -115,7 +115,7 @@ export function Skills() {
                         className={`flex items-start gap-3 py-3 ${j > 0 ? "border-t border-border/20" : ""}`}
                       >
                         <span className="w-[6px] h-[6px] rounded-full bg-accent/50 mt-[5px] flex-shrink-0" />
-                        <span className="text-[13px] text-foreground/70 leading-snug">
+                        <span className="text-[13px] text-foreground/85 font-medium leading-snug">
                           {skill}
                         </span>
                       </li>

@@ -64,7 +64,7 @@ export function Hero() {
           >
             Jayson
             <br />
-            <span className="text-foreground/70">Awori</span>
+            <span className="text-foreground/80">Awori</span>
             <span className="text-accent">.</span>
           </motion.h1>
 
@@ -81,7 +81,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7, ease: [0.23, 1, 0.32, 1] }}
-            className="text-lg md:text-xl text-foreground/55 max-w-2xl mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-foreground/80 font-medium max-w-2xl mb-10 leading-relaxed"
           >
             I keep networks running, endpoints secure, and end users unblocked.
             CCNA-certified, comfortable across Windows, Linux and macOS, with
@@ -122,13 +122,13 @@ export function Hero() {
           className="absolute bottom-24 right-10 md:right-16 hidden md:grid grid-cols-[72px_1fr] gap-x-4 gap-y-2 text-sm border border-border/40 bg-card rounded-sm p-5 max-w-[380px]"
         >
           <dt className="font-mono text-[11px] text-muted-foreground">role</dt>
-          <dd className="text-foreground/70 text-[13px]">IT Support / Networking / Cybersecurity</dd>
+          <dd className="text-foreground/90 text-[13px] font-medium">IT Support / Networking / Cybersecurity</dd>
           <dt className="font-mono text-[11px] text-muted-foreground">based</dt>
-          <dd className="text-foreground/70 text-[13px]">Nairobi, Kenya</dd>
+          <dd className="text-foreground/90 text-[13px] font-medium">Nairobi, Kenya</dd>
           <dt className="font-mono text-[11px] text-muted-foreground">cert</dt>
-          <dd className="text-foreground/70 text-[13px]">CCNA · CIPIT Data Protection</dd>
+          <dd className="text-foreground/90 text-[13px] font-medium">CCNA · CIPIT Data Protection</dd>
           <dt className="font-mono text-[11px] text-muted-foreground">uptime</dt>
-          <dd className="text-foreground/70 text-[13px]">4+ years hands-on field experience</dd>
+          <dd className="text-foreground/90 text-[13px] font-medium">4+ years hands-on field experience</dd>
         </motion.div>
 
         {/* Scroll indicator */}

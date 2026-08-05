@@ -162,7 +162,7 @@ export function Certifications() {
               <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-muted-foreground mt-0.5">
                 Also
               </span>
-              <p className="text-sm text-foreground/65 max-w-xl leading-relaxed">
+              <p className="text-sm text-foreground/80 font-medium max-w-xl leading-relaxed">
                 <strong className="text-foreground">Environmental Volunteer</strong> — Mazingira Movement, ongoing.
                 Community waste collection, responsible disposal and flood-disaster
                 management initiatives across Nairobi.
