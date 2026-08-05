@@ -22,7 +22,7 @@ export function Footer() {
           className="flex items-center gap-3"
         >
           <img
-            src="/manus-storage/monogram-logo_636ae388.png"
+            src="/favicon.svg"
             alt="JA"
             className="w-5 h-5 opacity-50"
           />

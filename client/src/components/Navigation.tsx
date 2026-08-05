@@ -42,11 +42,11 @@ export function Navigation() {
           className="flex items-center gap-2 group flex-shrink-0"
         >
           <img
-            src="/manus-storage/monogram-logo_636ae388.png"
+            src="/favicon.svg"
             alt="JA"
             className="w-8 h-8 opacity-90 group-hover:opacity-100 transition-opacity"
           />
-          <span className="font-display text-lg tracking-tight hidden sm:block">
+          <span className="font-serif text-lg tracking-tight hidden sm:block">
             Jayson Awori
           </span>
         </a>

@@ -33,7 +33,7 @@ export function Hero() {
       {/* Brand mark - top right */}
       <div className="absolute top-8 right-10 md:right-16 z-[3]">
         <img
-          src="/manus-storage/monogram-logo_636ae388.png"
+          src="/favicon.svg"
           alt="JA"
           className="w-10 h-10 md:w-12 md:h-12 opacity-80"
         />
